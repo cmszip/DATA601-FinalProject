@@ -24,9 +24,7 @@ The data used in this project is freely available, and therefore this experiment
 
 ## Motivation
 
-Buying a car can be one of the most stressful experiences in a person's life. There is a ton of information to weigh, salespeople will push and pressure you, and knowing you can easily be taken advantage of can make the experience a painful one.
-
-However, part of this problem stems from not having adequate information to objectively discern what is a fair deal. People should be able to determine if a given car is being listed at a fair price, and the author wants to provide a useful tool for people to be able to do that.
+What is the formula for a MLB team's success? Obviously, it's winning, because a team must win in order to become championship contenders. And obviously, winning is accomplished by scoring more runs than your opponent. But if you were a general manager of a baseball franchise, you would want to go beyond that to determine a more precise equation to field a consistently winning team. Then, based on this formula, a general manager should be able to determine a player's value in terms of contributing to a team's winning chances.
 
 ## Goals
 
@@ -61,50 +59,54 @@ This dataset was altered via data cleaning and feature engineering to become:
      * int64: 1
      * object: 2
   * 0 null values
-    "Here is the individual player statistics dataset:\n",
-    "* <b>PlayerStats_Batting</b>\n",
-    "    * 215 KB as CSV / 392.7 KB in Pandas\n",
-    "    * 2185 rows\n",
-    "    * 23 columns\n",
-    "        * Column datatypes:\n",
-    "            * float64: 12\n",
-    "            * int64: 7\n",
-    "            * object: 4\n",
-    "    * 1403 null values\n",
+
+Here is the individual player statistics dataset:
+* <b>PlayerStats_Batting</b>
+  * 215 KB as CSV / 392.7 KB in Pandas
+  * 2185 rows
+  * 23 columns
+    * Column datatypes:
+     * float64: 12
+     * int64: 7
+     * object: 4
+  * 1403 null values
       
 #### Packages
 Packages used to retrieve, clean, alter, and analyze the data, as well as build, refine, and evaluate the model included:
-  * matplotlib
-  * numpy
-  * pandas
-  * sklearn
+  * matplotlib: 3.2.2
+  * numpy: 1.18.5
+  * pandas: 1.0.5
+  * sklearn: 0.23.1
     * LinearRegression
     * mean_squared_error
     * r2_score
     * RFE
     * StandardScaler
     * train_test_split
-  * seaborn
+  * seaborn: 0.10.1
  
 ## Summary
 
-In summary, the resulting multiple linear regression model's equation to determine a car's price is:
-
-<i><b>price</b> = 0.7246 + (0.4871 * curb-weight) - (0.3230 * aspiration_std) + (0.4062 * fuel-system_mpfi) - (0.3168 * make-quality_Budget) + (1.3541 * make-quality_Premium) - (0.5915 * num-of-cylinders_four)</i>
-
-This model will account for 85.1% of the variance in the data while maintaining a low mean squared error of 0.149 with all variables being statistically significant.
-
-A person can therefore make pricing decisions based on this model. If a person is more interested in a budget, midrange, or premium brand, he/she/they can account for this in the model as well. Importantly this allows a person to predict the expected price of a vehicle based on these features, which means he/she/they can determine if it is a good deal on a car or if it is overpriced.  
+In summary, the following answers were presented for the research questions:
+* What features most significantly impact the winning percentage of a given Major League Baseball (MLB) team?
+    * The features which most significantly impact winning percentage are home runs (HR), batting average (AVG), on-base percentage (OBP), home runs allowed per nine innings (HR/9), batting average allowed on balls in play (BABIP_y), ground ball percentage (GB%), and home runs allowed per fly ball (HR/FB).
+* For those given features, to what extent do they impact a team's winning percentage?
+    * From multiple linear regression models, the following formula was created:
+    <div align="center"><i><b>W%</b> = 0.8092 + (0.1078 * HR) + (1.0229 * AVG) + (1.4072 * OBP) - (0.4279 * HR/9) - (2.0556 * BABIP_y) - (0.8026 * GB%) + (2.4894 * HR/FB)</i></div>
+* Based on this, who has been the most valuable player in contributing to a team's winning percentage from 2017-2020?
+    * It was calculated that Mike Trout contributed the most offensively toward his team's winning percentage. 
 
 ## Limitations
-One limitation is that a decision was made to impute the median value of the column 'stroke' for four vehicles made by Mazda. It did not seem to effect the model, as 'stroke' was not an included feature in the model's final equation.
+One limitation comes from baseball itself. We could only craft a model that accounted for 58.1% of data variance. There is a lot to baseball that impacts winning and losing. While you want your team to bat well, field well, and pitch well, no team is perfect. Players make mistakes in all phases of the game which can have a direct outcome on the result, especially in a close game. So this model cannot account for a higher amount of the data variance.
 
-However, the main limitations are found in the dataset itself. Although the original dataset is over 200 vehicles, that isn't very large compared to the number of automobile models that are available in the US. Furthermore, there are some very popular US brands that are missing. Ford, Chrysler, Lincoln, Cadillac, and others are not included in the dataset. Having a more robust dataset would likely alter the model in ways that will benefit it, and by extension, the user.
+Additionally, one of the problems with sports predictions is that the rows are not truly independent of one another. The teams play each other, impacting each other's win percentages. For example, the Yankees will typically play the Orioles 19 times in a standard length season. Each time they play each other, they impact each other's win percentage. Thus, they aren't independent.
+
+Another limitation is that the dataset of team statistics was only 450 rows. This was chosen as a precaution to prevent skewed data from the "steroid era" of baseball. But a larger dataset from multiple decades of seasons would be preferable. Additionally, a few features were removed due to many null values. Perhaps these features could have been important in determining the win percentage, but the decision was made to preserve as many rows/seasons as possible in the dataset.
 
 ## Contributors
 
 Clifton Saul
 
-## [License & copyright](https://github.com/cmszip/DATA601-Project1-Regression/blob/main/LICENSE) 
+## [License & copyright](https://github.com/cmszip/DATA601-FinalProject/blob/main/LICENSE) 
 
 © Clifton M Saul Jr.
