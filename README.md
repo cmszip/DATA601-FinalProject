@@ -1,4 +1,4 @@
-![Baseball](Photo by Steshka Willems from Pexels)
+![Baseball](https://www.goodfreephotos.com/united-states/pennsylvania/pittsburgh/pittsburgh-pirates.jpg.php)
 
 # Carbuying Made Easy: <br>Predicting the Price of a Car Based on its Features 
 <b>by Clifton Saul</b>
