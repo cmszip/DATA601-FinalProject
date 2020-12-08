@@ -1,4 +1,4 @@
-![Baseball](https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.kidschoicesports.com%2Fbaseballt-ball&psig=AOvVaw2ERKT16X775HTQ7arz4oYi&ust=1607488672000000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNj2qYzIve0CFQAAAAAdAAAAABAKhttps://www.goodfreephotos.com/albums/united-states/pennsylvania/pittsburgh/pittsburgh-pirates.jpg)
+![Baseball](http://tulsaareayouthbaseball.org/portals/87/banner11_2.jpg)
 
 # A Formula for Success: <br>Predicting How to Win in Major League Baseball
 <b>by Clifton Saul</b>
