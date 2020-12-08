@@ -1,4 +1,4 @@
-![Car Banner](https://www.pexels.com/photo/white-baseball-ball-on-brown-leather-baseball-mitt-1661950/)
+![Baseball](Photo by Steshka Willems from Pexels)
 
 # Carbuying Made Easy: <br>Predicting the Price of a Car Based on its Features 
 <b>by Clifton Saul</b>
