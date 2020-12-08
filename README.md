@@ -26,44 +26,41 @@ The data used in this project is freely available, and therefore this experiment
 
 Buying a car can be one of the most stressful experiences in a person's life. There is a ton of information to weigh, salespeople will push and pressure you, and knowing you can easily be taken advantage of can make the experience a painful one.
 
-![Stressed Out Car](https://www.confused.com/-/media/confused/articles/article-content-images/car-insurance/driving-stress-main.jpg?la=en-gb&hash=FD620795484988910AC1E8C32C671B2AF49C880B)
-
 However, part of this problem stems from not having adequate information to objectively discern what is a fair deal. People should be able to determine if a given car is being listed at a fair price, and the author wants to provide a useful tool for people to be able to do that.
 
 ## Goals
 
-Given the above motivation, the primary goal of this project is to build a model that will predict the price of a car based on some of its features. It will employ a multiple linear regression model to create an equation for people to use to determine a fair price for a car.
+Given the above motivation, the primary goal of this project is to build a model that will predict the win percentage of a MLB team given a set of chosen features. It will employ a multiple linear regression model to create an equation that can be used to determine a team and player's effectiveness in contributing to winning.
 
-A secondary goal is a more personal one. This author hopes to build experience developing, refining, and evaluating a regression model. This model will be built using a dataset of vehicles. Info on this dataset can be found below.
+A secondary goal is a more personal one. This author hopes to build further experience developing, refining, and evaluating a model, but also to be able to present it to others. This model will be built using a dataset of baseball team statistics. Info on this dataset can be found below.
 
 
 ## Data Overview
 
-Data was pulled from IBM Cloud using Pandas. The code to do this can be found in the second code block of [Notebook 1](https://github.com/cmszip/DATA601-Project1-Regression/blob/main/Notebooks/Notebook%201%20-%20Technical%20Notebook.ipynb). Alternatively, the data can be downloaded manually from [Kaggle](https://www.kaggle.com/statsakash/used-car-price-prediction). This dataset consists of 201 rows of vehicles and their features.
+Data was pulled from [Fangraphs.com](https://www.fangraphs.com/leaders.aspx?pos=all&stats=bat&lg=all&qual=0&type=8&season=2020&month=0&season1=2020&ind=0&team=0,ts&rost=&age=&filter=&players=0). More information on how to pull the same data can be found in [Notebook 1](https://github.com/cmszip/DATA601-FinalProject/blob/main/Notebooks/Notebook%201%20-%20Data%20Exploration%20%26%20Cleaning.ipynb).
 
 Below is information on the dataset and the packages used in this project:
 
-* <b>TeamStats_Combined</b>\n",
-    "    * 145 KB as CSV / 225.1 KB in Pandas\n",
-    "    * 450 rows\n",
-    "    * 64 columns\n",
-    "        * Column datatypes:\n",
-    "            * float64: 32\n",
-    "            * int64: 25\n",
-    "            * object: 7\n",
-    "    * 870 null values\n",
-    "\n",
-    "This dataset was altered via data cleaning and feature engineering to become:\n",
-    "* <b>TeamStats_Combined_Cleaned</b>\n",
-    "    * 84.8 KB as CSV / 66.9 KB in Pandas\n",
-    "    * 450 rows\n",
-    "    * 19 columns\n",
-    "        * Column datatypes:\n",
-    "            * float64: 16\n",
-    "            * int64: 1\n",
-    "            * object: 2\n",
-    "    * 0 null values\n",
-    "    \n",
+* <b>TeamStats_Combined</b>
+ * 145 KB as CSV / 225.1 KB in Pandas
+ * 450 rows
+ * 64 columns
+    * Column datatypes:
+     * float64: 32
+     * int64: 25
+     * object: 7
+  * 870 null values
+  
+This dataset was altered via data cleaning and feature engineering to become:
+* <b>TeamStats_Combined_Cleaned</b>
+  * 84.8 KB as CSV / 66.9 KB in Pandas
+  * 450 rows
+  * 19 columns
+    * Column datatypes:
+     * float64: 16
+     * int64: 1
+     * object: 2
+  * 0 null values
     "Here is the individual player statistics dataset:\n",
     "* <b>PlayerStats_Batting</b>\n",
     "    * 215 KB as CSV / 392.7 KB in Pandas\n",
