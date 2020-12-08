@@ -19,7 +19,7 @@ The data used in this project is freely available, and therefore this experiment
 * <b>[Notebooks](https://github.com/cmszip/DATA601-FinalProject/tree/main/Notebooks)</b> - Folder containing the Jupyter notebooks used in this project.
   * <b>[Notebook 1 - Data Exploration & Cleaning](https://github.com/cmszip/DATA601-FinalProject/blob/main/Notebooks/Notebook%201%20-%20Data%20Exploration%20%26%20Cleaning.ipynb)</b> - Jupyter notebook where data was pulled, explored, and cleaned. 
   * <b>[Notebook 2 - Modeling](https://github.com/cmszip/DATA601-FinalProject/blob/main/Notebooks/Notebook%201%20-%20Data%20Exploration%20%26%20Cleaning.ipynb)</b> - Jupyter notebook where model was developed and refined. 
-  * <b>[Notebook 3 - Technical Report & Summary Presentation](https://github.com/cmszip/DATA601-FinalProject/blob/main/Notebooks/Notebook%203%20-%20Technical%20Report%20%26%20Summary%20Presentation.ipynb)</b> - This is the summary notebook that provides a synopsis of the work in Notebooks 1 & 2 with few code blocks. 
+  * <b>[Notebook 3 - Technical Report & Summary Presentation](https://github.com/cmszip/DATA601-FinalProject/blob/main/Notebooks/Notebook%203%20-%20Technical%20Report%20%26%20Summary%20Presentation.ipynb)</b> - This is the summary notebook that provides a synopsis of the work in Notebooks 1 & 2 with few code blocks. This should be what you view unless you want to see the codeblocks to create the content in this notebook. 
 * <b>[License](https://github.com/cmszip/DATA601-FinalProject/blob/main/LICENSE)</b> - MIT license and copyright.
 
 ## Motivation
